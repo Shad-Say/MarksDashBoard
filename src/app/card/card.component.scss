@@ -1,0 +1,18 @@
+.segmentName {
+  font-size: large;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border: thin solid black;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 5px 10px 8px #888888;
+  margin-bottom: 1rem;
+
+  input {
+    width: 2rem;
+  }
+}

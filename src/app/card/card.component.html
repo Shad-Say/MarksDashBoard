@@ -1,0 +1,14 @@
+<span class="segmentName">{{ segmentName }}</span>
+<div *ngFor="let entry of markSheet">
+  <div
+    class="row"
+    *ngIf="entry.marks <= condition[1] && entry.marks >= condition[0]"
+  >
+    <span>{{ entry.name }}</span>
+    <input
+      type="number"
+      (change)="update($event, entry)"
+      value="{{ entry.marks }}"
+    />
+  </div>
+</div>
